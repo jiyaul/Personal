@@ -18,7 +18,7 @@
 		border: 1px solid #dadada;
 	}
 	.cv-section-title h1 {
-		padding-top: 40px;
+		padding-top: 20px;
 		float: left;
 	}
 	.cv-section-title h1 small {
@@ -88,6 +88,6 @@
 		float: left;
 	}
 	.cv-section {
-		padding:20px;
+		padding:10px;
 	}
 }
