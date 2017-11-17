@@ -6,6 +6,12 @@
 	.hidden_print{
 		display: none !important;
 	}
+	.period {
+		float: right;
+		padding: 12px 20px;
+		background-color: #b1b1b1;
+		color: #fff;
+    }
 	.cv-section-title img {
 		float: left;
 		display: block;
