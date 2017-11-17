@@ -8,9 +8,7 @@
 	}
 	.period {
 		float: right;
-		padding: 12px 20px;
-		background: #b1b1b1;
-		color: #fff;
+		color: #555;
     }
 	.cv-section-title img {
 		float: left;
