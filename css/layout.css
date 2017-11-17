@@ -293,7 +293,7 @@
 		line-height: 50px;
 	}
 	
-	#print { bottom: 30px; }
+	#print { top: 30px; }
 	#pdf { bottom: 85px; }
 	
 	#print:hover,
