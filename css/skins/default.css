@@ -5,9 +5,11 @@
    ========================================================================== */
    
 	body {
-		background: #222 url(../../images/bg-body14.png) repeat top left;
-		color: #444;	
-	}
+		body {
+		background: #222 url(../../images/bg-body14.png) repeat-y;
+		color: #444;
+		background-size: contain;
+	}	
 	
 	h1, 
 	h2, 
