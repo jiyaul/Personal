@@ -283,7 +283,7 @@
 		-webkit-transition: background-color 0.3s;
 			 -o-transition: background-color 0.3s;
 				transition: background-color 0.3s;
-		z-index: 80;		
+		z-index: 99;		
 	}
 	
 	 #print i,
@@ -294,7 +294,6 @@
 	}
 	
 	#print { top: 50px; }
-	#pdf { bottom: 85px; }
 	
 	#print:hover,
 	#pdf:hover { background-color: #d78c02; }
@@ -313,6 +312,7 @@
 			margin: 50px auto; 
 			max-width: 1060px;
 		}
+		#print { bottom: 50px; }
 		
 		#header {}
 		
