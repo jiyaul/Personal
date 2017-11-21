@@ -271,6 +271,7 @@
 	#print,
 	#pdf {
 		position: fixed;
+		top:110px;
 		right: 30px;
 		display: block;
 		width: 50px;

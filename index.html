@@ -25,15 +25,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     
     <!-- /// FontAwesome Icons 4.0.3 ////////  -->
-	<link rel="stylesheet" href="css/fontawesome/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
     
 	<link rel="stylesheet" href="css/skins/default.css" id="cv-skin">
  
 </head>
 <body>
+
   
 	<div id="wrap" class="resume_form">
-	
+	<div id="page-content">
 		<div id="header">
         
 		<!-- /// HEADER  //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -56,27 +57,6 @@
                 <div class="span4">
                     
                     <div class="cv-item">
-                        
-                        <div class="social-media fixed">
-                            
-                            <a href="https://www.facebook.com/jiyaul.haq1" target="_blank" class="facebook-icon social-icon">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            
-                            <a href="https://twitter.com/" target="_blank" class="twitter-icon social-icon">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            
-                            <a href="https://plus.google.com/" target="_blank" class="googleplus-icon social-icon">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            
-                            <a href="https://in.linkedin.com/" target="_blank" class="linkedin-icon social-icon">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            
-                        </div>
-                        
                         <p class="last">
                             <span class="hidden-tablet">Email: </span><a href="mailto:jiya2786@yahoo.com">jiya2786@yahoo.com</a>
                             <br><span class="hidden-tablet">Phone: </span>+91 9650208684
@@ -91,7 +71,7 @@
 		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 		</div><!-- end #header -->
-		<div id="content">
+		<div id="main-content">
 		
 		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -639,24 +619,24 @@
 		
 	</div><!-- end #wrap -->
     
-    
+    </div>
     <a class="hidden_print" id="back-to-top" href="#">
     	<i class="fa fa-angle-up"></i>
     </a>
 	
-	<a class="hidden_print" id="print" href="javascript:window.print()" title="Print the CV">
-        <i class="fa fa-print"></i>
+	<a class="hidden_print word-export" id="print" href="javascript:void(0)" title="Print the CV">
+        <i class="fa fa-file-word-o"></i>
     </a>
-
-    <!-- /// jQuery ////////  -->
-	<script src="js/jquery-2.1.0.min.js"></script>
-   
-    <!-- /// ViewPort ////////  -->
-	<script src="js/viewport/jquery.viewport.js"></script>
-	
-	<!-- /// Custom JS ////////  -->
-	<script src="js/plugins.js"></script>	
-	<script src="js/scripts.js"></script>
-
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/FileSaver.js"></script> 
+<script src="js/jquery.wordexport.js"></script> 
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $("#print").click(function(event) {
+            $("#page-content").wordExport();
+        });
+    });
+    </script>
 </body>
 </html>
